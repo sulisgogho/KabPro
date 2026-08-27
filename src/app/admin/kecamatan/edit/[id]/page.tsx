@@ -49,22 +49,7 @@ export default async function EditKecamatan({ params }: { params: Promise<{ id: 
               <input name="linkWebsite" defaultValue={kecamatan.linkWebsite || ''} type="url" className="w-full border border-slate-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none bg-slate-50/50" placeholder="https://..." />
             </div>
 
-            <div className="space-y-2">
-              <label className="text-sm font-bold text-slate-700">Foto Kantor Kecamatan (Opsional)</label>
-              <div className="border-2 border-dashed border-slate-200 rounded-2xl h-[160px] flex flex-col items-center justify-center text-slate-500 hover:bg-slate-50 hover:border-teal-400 transition-colors cursor-pointer group bg-slate-50/50 relative overflow-hidden">
-                {kecamatan.gambarUrl ? (
-                  <img src={kecamatan.gambarUrl} alt={kecamatan.nama} className="absolute inset-0 w-full h-full object-cover" />
-                ) : (
-                  <>
-                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-3 group-hover:scale-110 transition-transform">
-                      <Upload className="w-6 h-6 text-teal-500" />
-                    </div>
-                    <p className="font-bold text-slate-700 mb-1">Klik untuk upload foto baru</p>
-                    <p className="text-xs text-slate-400">PNG, JPG, JPEG (Maks. 2MB)</p>
-                  </>
-                )}
-              </div>
-            </div>
+
 
             <div className="space-y-2">
               <label className="text-sm font-bold text-slate-700">Alamat / Profil Singkat</label>

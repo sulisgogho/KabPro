@@ -47,8 +47,8 @@ export default async function EditPemerintah({ params }: { params: Promise<{ id:
             <div className="space-y-2">
               <label className="text-sm font-bold text-slate-700">Foto Profil (Opsional)</label>
               <div className="border-2 border-dashed border-slate-200 rounded-2xl h-[160px] flex flex-col items-center justify-center text-slate-500 hover:bg-slate-50 hover:border-blue-400 transition-colors cursor-pointer group bg-slate-50/50 relative overflow-hidden">
-                {pemerintah.fotoUrl ? (
-                  <img src={pemerintah.fotoUrl} alt={pemerintah.nama} className="absolute inset-0 w-full h-full object-cover" />
+                {pemerintah.gambarUrl ? (
+                  <img src={pemerintah.gambarUrl} alt={pemerintah.nama} className="absolute inset-0 w-full h-full object-cover" />
                 ) : (
                   <>
                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-3 group-hover:scale-110 transition-transform">
