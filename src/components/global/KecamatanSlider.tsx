@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 
 const kecamatan = [
   "Bantaran", "Banyuanyar", "Besuk", "Dringu", "Gading", "Gending", 
@@ -27,7 +28,13 @@ export function KecamatanSlider() {
             className="h-8 md:h-9 w-[110px] shrink-0 flex items-center justify-center transition-all duration-300 hover:scale-110 grayscale hover:grayscale-0"
             title={`Kecamatan ${kec}`}
           >
-            <img src={`/kecamatan/${kec}.png`} alt={`Kecamatan ${kec}`} className="h-full w-auto object-contain drop-shadow-sm" />
+            <Image 
+              src={`/kecamatan/${kec}.png`} 
+              alt={`Kecamatan ${kec}`} 
+              width={110} 
+              height={36} 
+              className="h-full w-auto object-contain drop-shadow-sm" 
+            />
           </a>
         ))}
       </div>

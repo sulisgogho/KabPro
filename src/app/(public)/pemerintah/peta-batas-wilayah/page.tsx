@@ -287,10 +287,10 @@ export default function PetaBatasWilayahPage() {
           <div className="bg-white border border-slate-100 p-6 rounded-2xl shadow-sm hover:shadow-md hover:border-orange-200 transition-all">
             <h3 className="font-bold text-slate-900 mb-3 text-lg">Letak Kabupaten Probolinggo</h3>
             <p className="text-slate-600 text-sm leading-relaxed mb-1">
-              7° 40' - 8° 10' Lintang Selatan
+              7&deg; 40&apos; - 8&deg; 10&apos; Lintang Selatan
             </p>
             <p className="text-slate-600 text-sm leading-relaxed">
-              112° 50' - 113° 30' Bujur Timur
+              112&deg; 50&apos; - 113&deg; 30&apos; Bujur Timur
             </p>
           </div>
 

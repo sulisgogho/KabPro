@@ -71,7 +71,7 @@ export async function updateBerita(id: string, formData: FormData) {
   // Re-generate slug (optional, but good for SEO if title changes)
   const slug = judul.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '-' + Date.now();
 
-  const updateData: any = {
+  const updateData: Record<string, unknown> = {
     judul,
     slug,
     kategori,

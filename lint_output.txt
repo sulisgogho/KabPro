@@ -1,0 +1,209 @@
+
+> frontend@0.1.0 lint
+> eslint
+
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\parse-wisata.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\prisma.config.ts
+  4:1  error  Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free  @typescript-eslint/ban-ts-comment
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\prisma\fix-camat.js
+  1:26  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\prisma\seed-opd.js
+  1:26  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\prisma\seed.js
+    1:26  error    A `require()` style import is forbidden    @typescript-eslint/no-require-imports
+    2:16  error    A `require()` style import is forbidden    @typescript-eslint/no-require-imports
+    9:9   warning  'user' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  153:43  error    A `require()` style import is forbidden    @typescript-eslint/no-require-imports
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\actions\auth.ts
+  9:40  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\actions\berita.ts
+  74:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\agenda\page.tsx
+   26:22  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  161:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\dashboard\page.tsx
+   5:35  warning  'ArrowRight' is defined but never used    @typescript-eslint/no-unused-vars
+  11:36  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  77:84  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\informasi\taman\page.tsx
+  2:15  warning  'TreePine' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\layanan\kependudukan\page.tsx
+  117:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  141:42  warning  'index' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+  161:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\layanan\page.tsx
+   3:8   warning  'Link' is defined but never used  @typescript-eslint/no-unused-vars
+  18:33  warning  'i' is defined but never used     @typescript-eslint/no-unused-vars
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\layanan\perizinan\page.tsx
+  52:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\page.tsx
+    2:66   warning  'ChevronLeft' is defined but never used                                                                                                                                                                                                                                                  @typescript-eslint/no-unused-vars
+    2:148  warning  'Play' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+    8:8    warning  'YouTubeThumbnail' is defined but never used                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+  101:19   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  111:19   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  212:19   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  227:23   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  294:18   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\pemerintah\bupati\page.tsx
+   89:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  175:29  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  208:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\pemerintah\kecamatan\page.tsx
+  6:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\pemerintah\peta-batas-wilayah\page.tsx
+  290:20  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  290:29  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  293:22  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  293:33  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\pemerintah\visi-misi\page.tsx
+  48:11   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  51:11   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  57:13   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  57:107  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  63:13   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  83:13   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\pengaduan\page.tsx
+   2:10  warning  'Smartphone' is defined but never used                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+  82:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\publikasi\berita\[slug]\page.tsx
+  70:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  93:25  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\publikasi\berita\page.tsx
+  57:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\publikasi\video\[id]\page.tsx
+  77:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\(public)\publikasi\video\page.tsx
+  49:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\admin\berita\edit\[id]\page.tsx
+  77:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\admin\berita\page.tsx
+  2:29  warning  'Edit' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\admin\event\edit\[id]\page.tsx
+  66:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\admin\infografis\edit\[id]\page.tsx
+  45:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\admin\kecamatan\edit\[id]\page.tsx
+  2:32  warning  'Upload' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\admin\layanan\edit\[id]\page.tsx
+  56:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\admin\pariwisata\edit\[id]\page.tsx
+  60:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\admin\pariwisata\page.tsx
+  60:27  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\admin\pemerintah\edit\[id]\page.tsx
+  51:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\admin\prestasi\edit\[id]\page.tsx
+  56:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\admin\taman\edit\[id]\page.tsx
+  65:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\admin\taman\page.tsx
+  60:28  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\api\auth\logout\route.ts
+  8:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\api\bps\route.ts
+  142:11  warning  'searchParams' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\login\login\page.tsx
+  7:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\app\login\page.tsx
+  14:9   warning  'router' is assigned a value but never used                                                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+  37:7   warning  Do not use `window.location.href` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination                       @next/next/no-location-assign-relative-destination
+  38:19  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  56:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\components\admin\AdminSidebar.tsx
+   4:48  warning  'Info' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+   4:94  warning  'ImageIcon' is defined but never used                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+  27:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\components\global\Footer.tsx
+  16:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  45:18  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\components\global\Navbar.tsx
+  95:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\components\public\AgendaCalendar.tsx
+  267:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\components\public\BeritaList.tsx
+  68:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\components\public\HeroSlider.tsx
+  32:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\components\public\PariwisataSlider.tsx
+   4:37  warning  'MapPin' is defined but never used                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+  99:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\components\public\PemerintahList.tsx
+  4:24  warning  'ChevronLeft' is defined but never used   @typescript-eslint/no-unused-vars
+  4:37  warning  'ChevronRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\components\public\PrestasiList.tsx
+  4:18  warning  'ChevronDown' is defined but never used   @typescript-eslint/no-unused-vars
+  4:57  warning  'ChevronLeft' is defined but never used   @typescript-eslint/no-unused-vars
+  4:70  warning  'ChevronRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\components\public\VideoList.tsx
+   4:20  warning  'ChevronRight' is defined but never used                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+   4:34  warning  'ChevronLeft' is defined but never used                                                                                                                                                                                                                                                  @typescript-eslint/no-unused-vars
+   5:8   warning  'Link' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+  68:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\components\public\VideoSlider.tsx
+  31:9  warning  'mainVideo' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  38:9  warning  'prevVideo' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  39:9  warning  'nextVideo' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\components\public\YouTubeThumbnail.tsx
+  17:5  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\lib\jwt.ts
+  8:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\sulis\Videos\Fullstack\kabpro\frontend\src\proxy.ts
+  4:7  warning  'protectedRoutes' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Γ£û 96 problems (21 errors, 75 warnings)
+

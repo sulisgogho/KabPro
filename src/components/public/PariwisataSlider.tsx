@@ -47,8 +47,11 @@ export default function PariwisataSlider({ items }: { items: PariwisataItem[] })
     <div className="w-full overflow-x-hidden">
       <div 
         className="relative w-full max-w-[1400px] mx-auto flex flex-col items-center justify-center py-10"
-        onMouseEnter={() => setIsHovered(true)}
+        onMouseDown={() => setIsHovered(true)}
+        onMouseUp={() => setIsHovered(false)}
         onMouseLeave={() => setIsHovered(false)}
+        onTouchStart={() => setIsHovered(true)}
+        onTouchEnd={() => setIsHovered(false)}
       >
         {/* Cards Container */}
         <div className="relative w-full h-[450px] md:h-[550px] flex items-center justify-center mb-8">

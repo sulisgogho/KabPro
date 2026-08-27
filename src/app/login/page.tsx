@@ -33,10 +33,10 @@ export default function LoginPage() {
         throw new Error(data.message || 'Terjadi kesalahan');
       }
 
-      // Berhasil login, arahkan dan paksa muat ulang agar middleware berjalan sempurna
-      window.location.href = '/admin';
-    } catch (err: any) {
-      setError(err.message);
+      // Berhasil login, arahkan
+      router.push('/admin');
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Terjadi kesalahan');
     } finally {
       setIsLoading(false);
     }

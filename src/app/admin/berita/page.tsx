@@ -1,7 +1,8 @@
 import React from 'react';
-import { Newspaper, Plus, Search, Edit, Trash2, Pencil } from 'lucide-react';
+import { Newspaper, Search, Edit, Trash2, Pencil } from 'lucide-react';
 import Link from 'next/link';
 import { getBerita, deleteBerita } from '@/actions/berita';
+import { AdminPageHeader } from '@/components/admin/AdminPageHeader';
 
 export default async function AdminBerita() {
   const berita = await getBerita();
@@ -10,23 +11,13 @@ export default async function AdminBerita() {
     <div className="space-y-6">
       
       {/* Header Section */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
-            <Newspaper className="w-6 h-6" />
-          </div>
-          <div>
-            <h1 className="text-2xl font-bold text-slate-900">Manajemen Berita</h1>
-            <p className="text-slate-500">Kelola artikel dan berita Kabupaten Probolinggo.</p>
-          </div>
-        </div>
-        <Link 
-          href="/admin/berita/tambah"
-          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl flex items-center gap-2 font-semibold shadow-sm hover:shadow-md transition-all w-fit"
-        >
-          <Plus className="w-5 h-5" /> Tulis Berita
-        </Link>
-      </div>
+      <AdminPageHeader 
+        title="Manajemen Berita"
+        description="Kelola artikel dan berita Kabupaten Probolinggo."
+        Icon={Newspaper}
+        actionLabel="Tulis Berita"
+        actionHref="/admin/berita/tambah"
+      />
 
       {/* Table Section */}
       <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">

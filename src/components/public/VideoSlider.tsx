@@ -5,9 +5,26 @@ import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import Link from 'next/link';
 import YouTubeThumbnail from './YouTubeThumbnail';
 
-export default function VideoSlider({ videos }: { videos: any[] }) {
+export default function VideoSlider({ videos }: { videos: { id: string, youtubeId: string, judul: string }[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+
+  const nextSlide = React.useCallback(() => {
+    if (!videos || videos.length === 0) return;
+    setCurrentIndex((prev) => (prev + 1) % videos.length);
+  }, [videos]);
+
+  const prevSlide = React.useCallback(() => {
+    if (!videos || videos.length === 0) return;
+    setCurrentIndex((prev) => (prev - 1 + videos.length) % videos.length);
+  }, [videos]);
+
+  // Auto-play
+  React.useEffect(() => {
+    if (!videos || videos.length === 0 || isHovered) return;
+    const timer = setInterval(nextSlide, 4000); // 4 detik
+    return () => clearInterval(timer);
+  }, [isHovered, videos, nextSlide]);
 
   if (!videos || videos.length === 0) return null;
 
@@ -20,21 +37,6 @@ export default function VideoSlider({ videos }: { videos: any[] }) {
 
   const prevVideo = videos.length > 1 ? videos[prevIndex] : null;
   const nextVideo = videos.length > 1 ? videos[nextIndex] : null;
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % videos.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + videos.length) % videos.length);
-  };
-
-  // Auto-play
-  React.useEffect(() => {
-    if (isHovered || videos.length === 0) return;
-    const timer = setInterval(nextSlide, 4000); // 4 detik
-    return () => clearInterval(timer);
-  }, [currentIndex, isHovered, videos.length]);
 
   return (
     <div 

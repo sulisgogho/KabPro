@@ -94,7 +94,7 @@ export function Navbar() {
           <div className="w-11 h-12 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform drop-shadow-sm">
             <img src="/image/Logo-Kabpro.svg" alt="Logo Kabupaten Probolinggo" className="w-full h-full object-contain" />
           </div>
-          <div className="text-base font-extrabold text-slate-800 leading-tight tracking-tight hidden sm:block">
+          <div className="text-sm sm:text-base font-extrabold text-slate-800 leading-tight tracking-tight">
             Pemerintah Kabupaten<br />
             <span className="text-blue-700">Probolinggo</span>
           </div>
@@ -208,7 +208,7 @@ export function Navbar() {
                               onClick={() => !sublink.external && setIsMobileMenuOpen(false)}
                             >
                               <div className="w-10 h-10 shrink-0 rounded-lg bg-slate-100 flex items-center justify-center">
-                                {React.cloneElement(sublink.icon as React.ReactElement<any>, { className: 'w-4 h-4 text-slate-600' })}
+                                {React.cloneElement(sublink.icon as React.ReactElement<{ className?: string }>, { className: 'w-4 h-4 text-slate-600' })}
                               </div>
                               <div className="flex flex-col pt-0.5">
                                 <span className="font-bold text-slate-700 text-[14px] flex items-center gap-1">

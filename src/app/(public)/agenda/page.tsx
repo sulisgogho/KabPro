@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Calendar as CalendarIcon, Clock, MapPin, ChevronRight, ChevronLeft, Home } from 'lucide-react';
 import { prisma } from '@/lib/prisma';
+import { Prisma } from '@prisma/client';
 import AgendaFilter from '@/components/public/AgendaFilter';
 
 export const metadata = {
@@ -23,7 +24,7 @@ export default async function AgendaPage(
   const itemsPerPage = 12;
 
   // Build where clause
-  let whereClause: any = {};
+  const whereClause: Prisma.AgendaWhereInput = {};
 
   if (query) {
     whereClause.judul = {

@@ -45,16 +45,16 @@ export default function VisiMisiPage() {
       <div className="bg-blue-600 rounded-2xl overflow-hidden mb-16 relative flex flex-col md:flex-row text-white shadow-lg">
         {/* Quote watermark */}
         <div className="absolute top-4 left-6 text-[120px] leading-none font-serif text-white/10 select-none pointer-events-none">
-          "
+          &quot;
         </div>
         <div className="absolute bottom-[-40px] left-[30%] text-[120px] leading-none font-serif text-white/10 select-none pointer-events-none">
-          "
+          &quot;
         </div>
 
         <div className="flex-1 p-8 md:p-10 relative z-10 flex flex-col justify-center">
           <h2 className="text-2xl font-bold mb-4 text-white text-center md:text-left">Visi</h2>
           <p className="text-xl font-bold leading-snug">
-            "Terwujudnya Kabupaten Probolinggo SAE (Sejahtera, Amanah- Religius serta Eksis Berdaya Saing)"
+            &quot;Terwujudnya Kabupaten Probolinggo SAE (Sejahtera, Amanah- Religius serta Eksis Berdaya Saing)&quot;
           </p>
         </div>
         

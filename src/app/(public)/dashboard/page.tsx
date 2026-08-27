@@ -8,6 +8,7 @@ import {
 
 export default function PublicDashboard() {
   const [activeTab, setActiveTab] = useState('Overview');
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
@@ -74,6 +75,7 @@ export default function PublicDashboard() {
       </div>
     );
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const Card = ({ title, value, unit, subtitle, icon, highlightColor = 'blue' }: any) => (
       <div className="bg-white p-6 rounded-2xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07)] border border-slate-50 relative overflow-hidden group">
         <div className={`absolute top-0 right-0 w-24 h-24 bg-${highlightColor}-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110`}></div>
