@@ -1,0 +1,150 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  username  String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Berita {
+  id        String   @id @default(uuid())
+  judul     String
+  slug      String   @unique
+  konten    String
+  kategori  String
+  gambarUrl String?
+  status    String   @default("Published")
+  tanggal   DateTime @default(now())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Dokumen {
+  id        String   @id @default(uuid())
+  judul     String
+  kategori  String
+  tipe      String   // PDF, Excel, dll
+  fileUrl   String?
+  tanggal   DateTime @default(now())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Agenda {
+  id                 String   @id @default(uuid())
+  judul              String
+  deskripsi          String
+  lokasi             String
+  tanggalPelaksanaan DateTime
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+}
+
+model Event {
+  id                 String   @id @default(uuid())
+  judul              String
+  deskripsi          String
+  lokasi             String
+  gambarUrl          String?
+  tanggalPelaksanaan DateTime
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+}
+
+model Pariwisata {
+  id          String   @id @default(uuid())
+  nama        String
+  deskripsi   String
+  lokasi      String
+  kategori    String
+  gambarUrl   String?
+  jamBuka     String?
+  hargaTiket  String?
+  linkMaps    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Layanan {
+  id          String   @id @default(uuid())
+  nama        String
+  deskripsi   String
+  kategori    String
+  linkLayanan String?
+  icon        String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Pemerintah {
+  id          String   @id @default(uuid())
+  nama        String
+  jabatan     String
+  instansi    String
+  gambarUrl   String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Kecamatan {
+  id             String   @id @default(uuid())
+  nama           String
+  namaCamat      String
+  luasWilayah    String
+  jumlahPenduduk String
+  linkWebsite    String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model Prestasi {
+  id          String   @id @default(uuid())
+  judul       String
+  tahun       String
+  kategori    String
+  deskripsi   String
+  gambarUrl   String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Infografis {
+  id        String   @id @default(uuid())
+  judul     String
+  kategori  String
+  gambarUrl String?
+  tanggal   DateTime @default(now())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Video {
+  id        String   @id @default(uuid())
+  judul     String
+  youtubeId String
+  kategori  String
+  tanggal   DateTime @default(now())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Taman {
+  id          String   @id @default(uuid())
+  nama        String
+  lokasi      String
+  deskripsi   String
+  fasilitas   String
+  gambarUrl   String?
+  linkMaps    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
