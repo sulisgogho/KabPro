@@ -2,6 +2,8 @@ import React from 'react';
 import { ChevronLeft, Upload, Save, X } from 'lucide-react';
 import Link from 'next/link';
 import { createBerita } from '@/actions/berita';
+import TiptapEditor from '@/components/admin/TiptapEditor';
+import ImageUploader from '@/components/admin/ImageUploader';
 
 export default function TambahBerita() {
   return (
@@ -54,24 +56,13 @@ export default function TambahBerita() {
                 </div>
               </div>
 
-              {/* Right Column (Image Upload) */}
-              <div className="space-y-2">
-                <label className="text-sm font-bold text-slate-700">Gambar Cover</label>
-                <label htmlFor="gambar" className="border-2 border-dashed border-slate-200 rounded-2xl h-[260px] flex flex-col items-center justify-center text-slate-500 hover:bg-slate-50 hover:border-blue-400 transition-colors cursor-pointer group bg-slate-50/50 relative overflow-hidden">
-                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-4 group-hover:scale-110 transition-transform">
-                    <Upload className="w-8 h-8 text-blue-500" />
-                  </div>
-                  <p className="font-bold text-slate-700 mb-1">Klik untuk upload gambar</p>
-                  <p className="text-sm text-slate-400">PNG, JPG, JPEG (Maks. 2MB)</p>
-                  <input type="file" id="gambar" name="gambar" accept="image/*" className="hidden" />
-                </label>
-              </div>
+              <ImageUploader />
             </div>
 
             {/* Bottom Full Width */}
             <div className="space-y-2">
               <label className="text-sm font-bold text-slate-700">Isi Berita</label>
-              <textarea name="konten" required rows={12} className="w-full border border-slate-200 rounded-xl px-4 py-4 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none resize-none bg-slate-50/50" placeholder="Tuliskan isi berita lengkap di sini..."></textarea>
+              <TiptapEditor name="konten" />
             </div>
 
             <div className="flex items-center justify-end gap-4 pt-8 border-t border-slate-100">

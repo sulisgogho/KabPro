@@ -67,6 +67,7 @@ export async function updateBerita(id: string, formData: FormData) {
   const tanggal = formData.get('tanggal') as string;
   const konten = formData.get('konten') as string;
   const gambar = formData.get('gambar') as File | null;
+  const removeGambar = formData.get('removeGambar') === 'true';
   
   // Re-generate slug (optional, but good for SEO if title changes)
   const slug = judul.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '-' + Date.now();
@@ -79,7 +80,11 @@ export async function updateBerita(id: string, formData: FormData) {
     tanggal: new Date(tanggal),
   };
 
-  if (gambar && gambar.size > 0) {
+  if (removeGambar) {
+    // Admin explicitly removed the image
+    updateData.gambarUrl = null;
+  } else if (gambar && gambar.size > 0) {
+    // Admin uploaded a new image
     const bytes = await gambar.arrayBuffer();
     const buffer = Buffer.from(bytes);
     const filename = `${Date.now()}-${(gambar.name || 'image.jpg').replace(/[^a-zA-Z0-9.-]/g, '')}`;
@@ -87,10 +92,11 @@ export async function updateBerita(id: string, formData: FormData) {
     await writeFile(path, buffer);
     updateData.gambarUrl = `/image/${filename}`;
   }
+  // If neither, keep existing gambarUrl unchanged
 
   await prisma.berita.update({
     where: { id },
-    data: updateData
+    data: updateData,
   });
 
   revalidatePath('/admin/berita');
